@@ -1,26 +1,34 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 import {
   Typography,
-  AppBar,
   Card,
   CardActions,
   CardMedia,
   CssBaseline,
   Grid,
-  Toolbar,
   Container,
+  ButtonBase,
+  Button,
 } from "@material-ui/core/";
+
+// importing components
+import Navbar from "./components/Navbar.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Typography variant="h1">Welcome</Typography>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <CssBaseline />
+        <Navbar />
+      </div>
+      <main>
+        <div>
+          <Container></Container>
+        </div>
+      </main>
+    </>
   );
 }
 
